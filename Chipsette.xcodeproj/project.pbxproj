@@ -15,6 +15,10 @@
 		7D97D2A228EBBFB700C8A748 /* ChipsetteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2A128EBBFB700C8A748 /* ChipsetteTests.swift */; };
 		7D97D2AC28EBBFB700C8A748 /* ChipsetteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2AB28EBBFB700C8A748 /* ChipsetteUITests.swift */; };
 		7D97D2AE28EBBFB700C8A748 /* ChipsetteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2AD28EBBFB700C8A748 /* ChipsetteUITestsLaunchTests.swift */; };
+		7D97D2CA28ECABDC00C8A748 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2C928ECABDC00C8A748 /* Memory.swift */; };
+		7D97D2CD28ECAD3C00C8A748 /* LiveMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2CC28ECAD3C00C8A748 /* LiveMemory.swift */; };
+		7D97D2D028ECAD7D00C8A748 /* MemoryErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2CF28ECAD7D00C8A748 /* MemoryErrors.swift */; };
+		7D97D2D428ECAE7F00C8A748 /* LiveMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D2D328ECAE7F00C8A748 /* LiveMemoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		7D97D2A728EBBFB700C8A748 /* ChipsetteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChipsetteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D97D2AB28EBBFB700C8A748 /* ChipsetteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsetteUITests.swift; sourceTree = "<group>"; };
 		7D97D2AD28EBBFB700C8A748 /* ChipsetteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsetteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D97D2C928ECABDC00C8A748 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		7D97D2CC28ECAD3C00C8A748 /* LiveMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMemory.swift; sourceTree = "<group>"; };
+		7D97D2CF28ECAD7D00C8A748 /* MemoryErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryErrors.swift; sourceTree = "<group>"; };
+		7D97D2D328ECAE7F00C8A748 /* LiveMemoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMemoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		7D97D28928EBBFB500C8A748 /* Chipsette */ = {
 			isa = PBXGroup;
 			children = (
+				7D97D2C828ECABD200C8A748 /* Protocols */,
+				7D97D2CB28ECAD2B00C8A748 /* Models */,
 				7D97D28A28EBBFB500C8A748 /* AppDelegate.swift */,
 				7D97D28C28EBBFB500C8A748 /* SceneDelegate.swift */,
 				7D97D28E28EBBFB500C8A748 /* ViewController.swift */,
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				7D97D2A128EBBFB700C8A748 /* ChipsetteTests.swift */,
+				7D97D2D328ECAE7F00C8A748 /* LiveMemoryTests.swift */,
 			);
 			path = ChipsetteTests;
 			sourceTree = "<group>";
@@ -122,6 +133,31 @@
 				7D97D2AD28EBBFB700C8A748 /* ChipsetteUITestsLaunchTests.swift */,
 			);
 			path = ChipsetteUITests;
+			sourceTree = "<group>";
+		};
+		7D97D2C828ECABD200C8A748 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7D97D2C928ECABDC00C8A748 /* Memory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7D97D2CB28ECAD2B00C8A748 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D97D2CE28ECAD6B00C8A748 /* Enums */,
+				7D97D2CC28ECAD3C00C8A748 /* LiveMemory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D97D2CE28ECAD6B00C8A748 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7D97D2CF28ECAD7D00C8A748 /* MemoryErrors.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D97D2CA28ECABDC00C8A748 /* Memory.swift in Sources */,
+				7D97D2D028ECAD7D00C8A748 /* MemoryErrors.swift in Sources */,
 				7D97D28F28EBBFB500C8A748 /* ViewController.swift in Sources */,
 				7D97D28B28EBBFB500C8A748 /* AppDelegate.swift in Sources */,
+				7D97D2CD28ECAD3C00C8A748 /* LiveMemory.swift in Sources */,
 				7D97D28D28EBBFB500C8A748 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D97D2D428ECAE7F00C8A748 /* LiveMemoryTests.swift in Sources */,
 				7D97D2A228EBBFB700C8A748 /* ChipsetteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
