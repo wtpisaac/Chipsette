@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7D433EF328EF0AF10017A434 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D433EF228EF0AF10017A434 /* ErrorHandler.swift */; };
+		7D433EF528EFC3260017A434 /* Keypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D433EF428EFC3260017A434 /* Keypad.swift */; };
+		7D433EF728EFC3380017A434 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D433EF628EFC3380017A434 /* Key.swift */; };
+		7D433EF928EFCB3B0017A434 /* KeypadInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D433EF828EFCB3B0017A434 /* KeypadInputHandler.swift */; };
+		7D433EFB28EFCC190017A434 /* LiveKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D433EFA28EFCC190017A434 /* LiveKeypad.swift */; };
+		7D433EFD28EFCC290017A434 /* LiveKeypadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D433EFC28EFCC290017A434 /* LiveKeypadTests.swift */; };
 		7D97D28B28EBBFB500C8A748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D28A28EBBFB500C8A748 /* AppDelegate.swift */; };
 		7D97D28D28EBBFB500C8A748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D28C28EBBFB500C8A748 /* SceneDelegate.swift */; };
 		7D97D28F28EBBFB500C8A748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97D28E28EBBFB500C8A748 /* ViewController.swift */; };
@@ -52,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		7D433EF228EF0AF10017A434 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		7D433EF428EFC3260017A434 /* Keypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypad.swift; sourceTree = "<group>"; };
+		7D433EF628EFC3380017A434 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		7D433EF828EFCB3B0017A434 /* KeypadInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadInputHandler.swift; sourceTree = "<group>"; };
+		7D433EFA28EFCC190017A434 /* LiveKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKeypad.swift; sourceTree = "<group>"; };
+		7D433EFC28EFCC290017A434 /* LiveKeypadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKeypadTests.swift; sourceTree = "<group>"; };
 		7D97D28728EBBFB500C8A748 /* Chipsette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chipsette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D97D28A28EBBFB500C8A748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D97D28C28EBBFB500C8A748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +159,7 @@
 				7DFECACD28ECEBA7000BA29B /* LiveRegisterTests.swift */,
 				7DFECAD728ECEF63000BA29B /* LiveStackTests.swift */,
 				7DFECAE328ED093A000BA29B /* LiveClockTests.swift */,
+				7D433EFC28EFCC290017A434 /* LiveKeypadTests.swift */,
 			);
 			path = ChipsetteTests;
 			sourceTree = "<group>";
@@ -171,6 +182,8 @@
 				7DFECAD928ED0340000BA29B /* Clock.swift */,
 				7DFECADB28ED0601000BA29B /* Timer.swift */,
 				7D433EF228EF0AF10017A434 /* ErrorHandler.swift */,
+				7D433EF428EFC3260017A434 /* Keypad.swift */,
+				7D433EF828EFCB3B0017A434 /* KeypadInputHandler.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 				7DFECACB28ECEB76000BA29B /* LiveRegister.swift */,
 				7DFECAD328ECEF01000BA29B /* LiveStack.swift */,
 				7DFECADF28ED086D000BA29B /* LiveClock.swift */,
+				7D433EFA28EFCC190017A434 /* LiveKeypad.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 			children = (
 				7D97D2CF28ECAD7D00C8A748 /* MemoryErrors.swift */,
 				7DFECAD128ECEEB3000BA29B /* StackErrors.swift */,
+				7D433EF628EFC3380017A434 /* Key.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -327,10 +342,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D97D2CA28ECABDC00C8A748 /* Memory.swift in Sources */,
+				7D433EF728EFC3380017A434 /* Key.swift in Sources */,
 				7DFECAD228ECEEB3000BA29B /* StackErrors.swift in Sources */,
 				7DFECAD028ECED7E000BA29B /* Stack.swift in Sources */,
+				7D433EFB28EFCC190017A434 /* LiveKeypad.swift in Sources */,
 				7D97D2D028ECAD7D00C8A748 /* MemoryErrors.swift in Sources */,
+				7D433EF928EFCB3B0017A434 /* KeypadInputHandler.swift in Sources */,
 				7DFECADC28ED0601000BA29B /* Timer.swift in Sources */,
+				7D433EF528EFC3260017A434 /* Keypad.swift in Sources */,
 				7DFECACC28ECEB76000BA29B /* LiveRegister.swift in Sources */,
 				7D97D28F28EBBFB500C8A748 /* ViewController.swift in Sources */,
 				7DFECADA28ED0340000BA29B /* Clock.swift in Sources */,
@@ -351,6 +370,7 @@
 				7DFECAD828ECEF63000BA29B /* LiveStackTests.swift in Sources */,
 				7DFECACE28ECEBA7000BA29B /* LiveRegisterTests.swift in Sources */,
 				7DFECAE428ED093A000BA29B /* LiveClockTests.swift in Sources */,
+				7D433EFD28EFCC290017A434 /* LiveKeypadTests.swift in Sources */,
 				7D97D2D428ECAE7F00C8A748 /* LiveMemoryTests.swift in Sources */,
 				7D97D2A228EBBFB700C8A748 /* ChipsetteTests.swift in Sources */,
 			);

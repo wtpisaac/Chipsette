@@ -47,6 +47,9 @@ class LiveClock: Clock {
     }
     
     required init(errorHandler: ErrorHandler) {
+        // FIXME: Should the error handler be in init, or should this be optional and set deferred?
+        // Throwing the errors somewhere isn't critical and can be ignored
+        // TODO: For consistency's sake this should probably be made optional
         self.errorHandler = errorHandler
     }
 }
